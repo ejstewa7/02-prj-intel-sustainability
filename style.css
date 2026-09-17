@@ -33,20 +33,20 @@ h1 span { color: #467b67; }
 .section-heading h2 { max-width: 400px; margin-bottom: 0; font-size: clamp(44px, 6vw, 82px); line-height: .9; letter-spacing: -.06em; }
 .section-heading h2 em { color: var(--orange); font-style: normal; }
 .section-heading > p:last-child { max-width: 275px; margin-bottom: 5px; color: var(--muted); line-height: 1.5; }
-.timeline-track { display: flex; gap: 24px; overflow-x: auto; padding: 0 0 32px; scroll-snap-type: x mandatory; }
-.timeline-card { position: relative; flex: 0 0 285px; min-height: 380px; padding: 26px 24px 24px; overflow: hidden; border-top: 2px solid var(--ink); background: #fffdf7; scroll-snap-align: start; transition: transform .3s ease, box-shadow .3s ease; }
+.timeline-track { display: flex; gap: 20px; overflow-x: auto; padding: 0 0 32px; scroll-snap-type: x mandatory; }
+.timeline-card { position: relative; flex: 0 0 255px; min-height: 310px; padding: 18px 18px 18px; overflow: hidden; border-top: 2px solid var(--ink); background: #fffdf7; scroll-snap-align: start; transition: transform .3s ease, box-shadow .3s ease; }
 .timeline-card::before { position: absolute; top: -9px; left: 23px; width: 14px; height: 14px; border: 3px solid var(--paper); border-radius: 50%; background: var(--orange); content: ''; }
 .timeline-card:hover { transform: translateY(-10px); box-shadow: 10px 12px 0 var(--mint); }
-.timeline-card-current { background: #dcefe2; }
-.timeline-card-current:hover { box-shadow: 10px 12px 0 var(--orange); }
-.timeline-card-current p { color: var(--muted); }
+.timeline-card-current { background: #153c6a; color: #fff; }
+.timeline-card-current:hover { box-shadow: 10px 12px 0 rgba(11, 58, 104, .35); }
+.timeline-card-current p { color: #dfeaf8; }
 .timeline-card:focus-within { outline: 3px solid var(--orange); outline-offset: 5px; }
-.timeline-card h2 { margin-bottom: 18px; color: var(--orange); font-family: 'DM Mono', monospace; font-size: 17px; font-weight: 500; }
-.timeline-card h3 { min-height: 48px; margin-bottom: 18px; font-size: 24px; line-height: 1; letter-spacing: -.04em; }
-.timeline-card img { display: block; width: calc(100% + 48px); height: 112px; margin: 0 -24px 20px; object-fit: cover; filter: saturate(.75); transition: filter .3s ease, transform .3s ease; }
+.timeline-card h2 { margin-bottom: 10px; color: var(--ink); font-family: 'DM Mono', monospace; font-size: 18px; font-weight: 500; }
+.timeline-card h3 { min-height: 48px; margin-bottom: 16px; font-size: 22px; line-height: 1.1; letter-spacing: -.04em; }
+.timeline-card img { display: block; width: calc(100% + 36px); height: 160px; margin: 0 -18px 0; object-fit: cover; filter: saturate(.75); transition: filter .3s ease, transform .3s ease; }
 .timeline-card:hover img { filter: saturate(1.15); transform: scale(1.04); }
-.timeline-card p { max-height: 0; margin-bottom: 0; overflow: hidden; opacity: 0; color: var(--muted); font-size: 14px; line-height: 1.5; transition: max-height .3s ease, opacity .2s ease; }
-.timeline-card:hover p, .timeline-card:focus-within p { max-height: 180px; opacity: 1; }
+.timeline-card p { position: absolute; left: 0; right: 0; bottom: 0; max-height: 0; margin: 0; padding: 0 18px; overflow: hidden; opacity: 0; color: #dfeaf8; font-size: 14px; line-height: 1.5; background: #153c6a; transition: max-height .35s ease, opacity .2s ease, padding .35s ease; }
+.timeline-card:hover p, .timeline-card:focus-within p { max-height: 180px; opacity: 1; padding: 16px 18px 18px; }
 footer { display: flex; justify-content: space-between; padding: 24px 7vw; border-top: 1px solid var(--line); color: var(--muted); font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; }
 @media (max-width: 650px) {
 	.hero { min-height: 88vh; padding: 28px 24px 56px; }
