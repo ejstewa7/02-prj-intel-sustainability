@@ -46,7 +46,7 @@ h1 span { color: #467b67; }
 .timeline-card img { display: block; width: calc(100% + 48px); height: 112px; margin: 0 -24px 20px; object-fit: cover; filter: saturate(.75); transition: filter .3s ease, transform .3s ease; }
 .timeline-card:hover img { filter: saturate(1.15); transform: scale(1.04); }
 .timeline-card p { max-height: 0; margin-bottom: 0; overflow: hidden; opacity: 0; color: var(--muted); font-size: 14px; line-height: 1.5; transition: max-height .3s ease, opacity .2s ease; }
-.timeline-card img:hover ~ p, .timeline-card img:focus-visible ~ p { max-height: 180px; opacity: 1; }
+.timeline-card:hover p, .timeline-card:focus-within p { max-height: 180px; opacity: 1; }
 footer { display: flex; justify-content: space-between; padding: 24px 7vw; border-top: 1px solid var(--line); color: var(--muted); font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; }
 @media (max-width: 650px) {
 	.hero { min-height: 88vh; padding: 28px 24px 56px; }
